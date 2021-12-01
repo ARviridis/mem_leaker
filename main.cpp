@@ -69,11 +69,9 @@ int main(int argc, char *argv[]) {
 
     cout << "PID__" << QCoreApplication::applicationPid() << endl;
 
-
-
     if (argc > 1) {
 
-        cout << QObject::tr("Vivodi dlya leaks mass") << endl;
+        cout << QObject::tr("Vivod dlya leaks mass") << endl;
         at *At = new at();
         QString var = QObject::tr(argv[1]);
         QThread *thread1 = new QThread;
@@ -102,11 +100,3 @@ int main(int argc, char *argv[]) {
     }
     return app.exec();
 }
-
-//for ochist
-//connect(sendPost, SIGNAL(finished()), postThread, SLOT(deleteLater()));
-//connect(sendPost, SIGNAL(finished()), sendPost, SLOT(deleteLater()));
-//thread1->deleteLater();
-//timer->deleteLater();
-//emit finished();
-//QCoreApplication::applicationName()
