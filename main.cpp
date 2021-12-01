@@ -99,4 +99,4 @@ int main(int argc, char *argv[]) {
         thread1->start();
     }
     return app.exec();
-}
+} 
